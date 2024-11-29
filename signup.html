@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="container my-4 text-center">
+      <div class="content m-auto w-75 p-5 shadow-lg text-white">
+        <h1>Smart Login System</h1>
+        <input
+        id="name"
+        class="form-control my-3 name"
+        placeholder="Enter your name"
+        type="text"
+        oninput="validate(this)"
+      />
+      <div class="alert alert-danger p-2 mt-2 d-none">
+         Your name must start with captial letter
+      </div>
+        <input
+          id="Email"
+          class="form-control my-3 "
+          placeholder="Enter your email"
+          type="email"
+          oninput="validate(this)"
+        />
+        <div class="alert alert-danger p-2 mt-2 d-none">
+           your email is not valid
+         </div>
+        <input
+          id="Password"
+          class="form-control my-3"
+          placeholder="Enter your password"
+          type="password"
+          oninput="validate(this)"
+        />
+        <div class="alert alert-danger p-2 mt-2 d-none">
+           your password must have a special char and a capitlized letter and more than 8 digits
+         </div>
+        <p id="incorrect" class="incorrect d-none">
+          incorrect email or password
+        </p>
+        <p id="success" class="success d-none">success</p>
+        <p id="used" class="success d-none">Email is used</p>
+        <p id="error" class="error d-none">All inputs is required</p>
+
+        <button  id="signup" class="btn w-100 my-4 signup">Sign up</button>
+
+        <p>
+            You have an accout?
+          <a href="index.html" class="text-white">Sign in</a>
+        </p>
+
+ 
+      </div>
+    </div>
+
+    <script src="Js/signup.js"></script>
+
+  </body>
+</html>

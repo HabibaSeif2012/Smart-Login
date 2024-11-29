@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="container my-4 text-center">
+      <div class="content m-auto w-75 p-5 shadow-lg text-white">
+        <h1>Smart Login System</h1>
+        <input
+          id="Email"
+          class="form-control my-3 "
+          placeholder="Enter your email"
+          type="email"
+          oninput="validate(this)"
+        />
+        <div class="alert alert-danger p-2 mt-2 d-none">
+           your email is not valid
+         </div>
+        <input
+          id="Password"
+          class="form-control my-3"
+          placeholder="Enter your password"
+          type="password"
+          oninput="validate(this)"
+        />
+        <div class="alert alert-danger p-2 mt-2 d-none">
+           your password must have a special char and a capitlized letter and more than 8 digits
+         </div>
+        <p id="incorrect" class="incorrect d-none">
+          incorrect email or password
+        </p>
+
+        <button id="login"  class="btn w-100 my-4 login">Login</button>
+
+        
+        <p>
+          Don't have an accout?
+          <a href="signup.html" class="text-white">Sign Up</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="Js/index.js"></script>
+  </body>
+</html>
